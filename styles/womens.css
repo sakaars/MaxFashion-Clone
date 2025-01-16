@@ -1,0 +1,72 @@
+#container {
+  padding: 0px 100px 0px 100px;
+}
+/* for slideshow css  */
+#slideshow {
+  width: 100%;
+  border: 1px solid red transparent;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#party {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.cattitle {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* css for catagories  */
+#content {
+  height: 600px;
+  width: 100%;
+}
+#content > div {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: space-around;
+  text-align: justify;
+  text-align: center;
+}
+#content p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.wcat > img {
+  width: 200px;
+  height: 200px;
+}
+
+/* offer div  */
+#offer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#offer > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* gift div  */
+#gift {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#gift > h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+#gift > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

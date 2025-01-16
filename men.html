@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/menspage.css" />
+    <title>Mens page</title>
+  </head>
+  <body>
+    <!-- navbar  main  section (importing) -->
+    <div id="nav_container"></div>
+
+    <div id="main_container">
+      <div id="slideshow">
+        <img id="headerimages" />
+      </div>
+      <br />
+      <hr />
+
+      <div class="content">
+        <h1 id="shopby">Shop By Category</h1>
+        <div id="homepage1"></div>
+        <br />
+        <hr />
+      </div>
+    </div>
+
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
+  </body>
+</html>
+
+<script src="./data/menhomepagedata.js"></script>
+<script src="./scripts/menshomepage.js"></script>
+<script src="./data/imagedata.js"></script>
+
+<script>
+  
+  var img = JSON.parse(localStorage.getItem("images"));
+  console.log(img.image_url);
+  let i = 0;
+  let x = setInterval(function () {
+    document.querySelector("#headerimages").src = img[i].image_url;
+    i = i + 1;
+    if (i == img.length - 1) {
+      i = 0;
+    }
+  }, 2000);
+
+</script>
+
+<script type="module">
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
+
+  //greet user
+  var uName = localStorage.getItem("userName");
+  if (uName == null) {
+    let userName = document.getElementById("hi");
+    userName.innerText = "SignUp-SignIn";
+  } else {
+    let userName = document.getElementById("hi");
+    userName.innerText = `Hi ${uName}`;
+  }
+
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
+</script>

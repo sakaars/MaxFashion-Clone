@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>SignUp-Page</title>
+  </head>
+
+  <style>
+    #container {
+      width: 60%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    #login_gouthlogin {
+      width: 38%;
+      margin: 4px auto;
+    }
+    #login_gouthlogin img {
+      width: 100%;
+      height: 65px;
+    }
+    #register{
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <!-- special navBar for this page  -->
+    <nav>
+      <div class="white-container flex">
+        <a href="/index.html"><img src="resources/max.png" alt="max-logo" /></a>
+
+        <ul class="white-right-menu flex">
+          <p>
+            <b><a href="login.html">LogIn</a></b>
+          </p>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main content of signUp part  -->
+    <div id="container">
+      <div id="signUp-form-div">
+        <h1>Sign up</h1>
+        <p>
+          Enjoy the convenience of a single account across all participating
+          brands
+        </p>
+        <!-- action="http://localhost:5000/signup" method="post"   -->
+        <form>
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" required />
+          <input type="text" id="num" placeholder="Mobile" required />
+          <input id="pass" type="text" placeholder="Password" required />
+          <p>
+            By creating your account you agree to our
+            <a href="https://www.maxfashion.in/in/en/termsandconditions"
+              ><br />
+              Terms and conditions</a
+            >
+          </p>
+          <br />
+          <p>For logIn - <a href="login.html">Click here</a></p>
+          <input type="submit" id="register" value="Register" />
+
+          <div
+            style="
+              text-align: center;
+              font-weight: 700;
+              text-decoration: underline;
+            "
+          >
+            OR
+          </div>
+
+          <div id="login_gouthlogin">
+            <a
+              href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fauth%2Fgoogle%2Fcallback&scope=profile%20email&client_id=933766787179-apg2fesa3jv91ojdqqklj63dbmjatu69.apps.googleusercontent.com&flowName=GeneralOAuthFlow"
+              ><img
+                src="./resources/btn_google_signin_dark_pressed_web@2x.png"
+                alt="Signin with google"
+            /></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
+  </body>
+</html>
+<script src="/scripts/signup.js"></script>
+
+<script type="module">
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
+</script>

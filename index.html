@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i1.lmsin.net/website_images/in/favicons/max/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <!-- <link rel="stylesheet" href="./styles/navbar.mediaquery.css"> -->
+    <title>Home-Page</title>
+  </head>
+
+  <body>
+    <!-- navbar  main  section (importing) -->
+    <div id="nav_container"></div>
+
+    <!--importing banner for mens women boys girls  -->
+    <div id="banner_container"></div>
+    <h1 id="b"></h1>
+
+    <!-- footer  main  section (importing) -->
+    <div id="footer_container"></div>
+  </body>
+</html>
+
+<script type="module">
+  //importing Nav-bar part
+  import nav from "./components/navbar.js";
+  let nav_container = document.getElementById("nav_container");
+  nav_container.innerHTML = nav();
+
+  //greet user
+  var uName = localStorage.getItem("userName");
+  if (uName == null) {
+    let userName = document.getElementById("hi");
+    userName.innerText = "SignUp-SignIn";
+  } else {
+    let userName = document.getElementById("hi");
+    userName.innerText = `Hi ${uName}`;
+  }
+
+  //importing banner part
+  import banner from "./components/banner.js";
+  let banner_container = document.getElementById("banner_container");
+  banner_container.innerHTML = banner();
+
+  // importing footer part
+  import footer from "./components/footer.js";
+  let footer_container = document.getElementById("footer_container");
+  footer_container.innerHTML = footer();
+</script>
+
