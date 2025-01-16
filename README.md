@@ -9,7 +9,7 @@ Max Fashion is an Emirati fashion brand under the banner of the Mumbai based Lan
 This is a project of unit 3 project. In this unit we mainly focus on Frontend side.
 
 ## Backend Github Repo
-- [Link](https://github.com/Aakashvani/MaxFashion-Backend)
+- [Link](https://github.com/sakaars/MaxFashion-Backend)
 
 
 
@@ -22,9 +22,9 @@ This is a project of unit 3 project. In this unit we mainly focus on Frontend si
 
 ## Demo
 
-- [Github backend repo link](https://github.com/Aakashvani/MaxFashion-Backend)
-- [Github fronted repo link](https://github.com/Aakashvani/MaxFashion-Clone)
-- [Blog Link](https://medium.com/@adityachoubey07/journey-of-constructing-clone-of-max-fashion-40b2e5da8a00)
+- [Github backend repo link](https://github.com/sakaars/MaxFashion-Backend)
+- [Github fronted repo link](https://github.com/sakaars/MaxFashion-Clone)
+<!-- - [Blog Link](https://medium.com/@adityachoubey07/journey-of-constructing-clone-of-max-fashion-40b2e5da8a00) -->
 
 ## Learning from the Project
 
@@ -32,14 +32,14 @@ This is a project of unit 3 project. In this unit we mainly focus on Frontend si
 - Using the ES6 standards in the code base has optimized our program and made it shorter and more interactive.
 -  Using the debouncing in the search functionality and set time interval and set timeout function made us understand how the browbehaveshave in asynchronous programming.
 
-## Team Members and Contributors
+<!-- ## Team Members and Contributors
 
 - [Aakash Kumar](https://github.com/Aakashvani)
 - [Akashy Kumar](https://github.com/Akshay-Singh-Rajput)
 - [Aditya Choubey](https://github.com/Aadi0706)
 - [Roshan Arikar ](https://github.com/roshanarikar)
 - [Abhicoder01](https://github.com/Abhicoder01)
-- [Manjeet Singh](https://github.com/manjeetsingh100001) - Contributed in Unit 4 Only.
+- [Manjeet Singh](https://github.com/manjeetsingh100001) - Contributed in Unit 4 Only. -->
 
 
 ## Screenshots
@@ -64,4 +64,5 @@ This is a project of unit 3 project. In this unit we mainly focus on Frontend si
 
 <!-- <img src="https://media3.giphy.com/media/vmGjjH1XOjViEfbBfZ/giphy.gif"  align="center" width="35"> -->
 
-## THANK YOU ❤️
+## THANK YOU 
+
